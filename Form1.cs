@@ -87,9 +87,9 @@ namespace modul2_1302204051
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (labelOutput.Text == "5" && labelOutput.Text != null)
+            if (labelOutput.Text == "0" && labelOutput.Text != null)
             {
-                labelOutput.Text = "1";
+                labelOutput.Text = "5";
             }
             else
             {
@@ -162,6 +162,16 @@ namespace modul2_1302204051
                 result = (firstNumber + secondNumber);
                 labelOutput.Text = result.ToString();
             }
+        }
+
+        private void buttonC_Click(object sender, EventArgs e)
+        {
+            labelOutput.Text = "0";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

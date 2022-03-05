@@ -40,7 +40,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button0 = new System.Windows.Forms.Button();
-            this.labelOutput = new System.Windows.Forms.Label();
+            this.buttonC = new System.Windows.Forms.Button();
+            this.labelOutput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -163,15 +164,24 @@
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.button0_Click);
             // 
+            // buttonC
+            // 
+            this.buttonC.Location = new System.Drawing.Point(347, 163);
+            this.buttonC.Name = "buttonC";
+            this.buttonC.Size = new System.Drawing.Size(60, 23);
+            this.buttonC.TabIndex = 14;
+            this.buttonC.Text = "C";
+            this.buttonC.UseVisualStyleBackColor = true;
+            this.buttonC.Click += new System.EventHandler(this.buttonC_Click);
+            // 
             // labelOutput
             // 
-            this.labelOutput.AutoSize = true;
-            this.labelOutput.Location = new System.Drawing.Point(92, 112);
+            this.labelOutput.Location = new System.Drawing.Point(95, 65);
             this.labelOutput.Name = "labelOutput";
-            this.labelOutput.Size = new System.Drawing.Size(14, 16);
-            this.labelOutput.TabIndex = 13;
+            this.labelOutput.Size = new System.Drawing.Size(226, 22);
+            this.labelOutput.TabIndex = 15;
             this.labelOutput.Text = "0";
-            this.labelOutput.Click += new System.EventHandler(this.labelOutput_Click);
+            this.labelOutput.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
@@ -179,6 +189,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 450);
             this.Controls.Add(this.labelOutput);
+            this.Controls.Add(this.buttonC);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -212,7 +223,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button0;
-        private System.Windows.Forms.Label labelOutput;
+        private System.Windows.Forms.Button buttonC;
+        private System.Windows.Forms.TextBox labelOutput;
     }
 }
 
